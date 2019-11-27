@@ -17,8 +17,12 @@ import {
 
 import React, { Component } from "react";
 import { switchCase } from '@babel/types';
+import SplashScreen from 'react-native-splash-screen';
 
 export default class App extends Component {
+	 componentDidMount() {
+    SplashScreen.hide();
+  }
 
   constructor() {
     super();
